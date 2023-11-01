@@ -27,7 +27,7 @@ body{
 .header{
     width: 100%;
     min-height: 100vh;
-    padding: 0 8%;
+    padding: 0 8%; 
     position: relative;
     overflow: hidden;
 }
@@ -35,7 +35,8 @@ body{
 nav{
     display: flex;
     align-items: center;
-    padding: 10px 0;
+   align-content: flex-end;
+   flex-direction: column;
 }
 /*Image logo*/
 img{
@@ -78,15 +79,25 @@ nav ul li a{
     gap: 5px;
 }
 
-.content{
+.content{ 
     margin-top: 10%;
     max-width: 600px;
+    display: inline;
+    position: relative;
 }
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
 .content h1{
+    display: flex;
     font-size: 80px;
     font-family: serif;
     color: var(--title-color);
     font-weight: 600;
+    justify-content: center;
 }
 
 .content h1 span{
@@ -94,15 +105,27 @@ nav ul li a{
     font-weight: 400;
     font-style: italic;
 }
+
+
+
 .content a{
     background: #4864ff;
     color: white;
     padding: 15px 70px;
     border-radius: 30px;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added line for vertical centering */
+    text-align: center;
     margin-top: 30px;
+    margin-bottom: 10px;
     text-decoration: none;
+    width: 200px;
+    max-width: 200px;
+    
+    
+    
 }
 
 .image-box img{
@@ -111,9 +134,10 @@ nav ul li a{
 }
 
 .image-box{
-    position: absolute;
-    bottom: 0;
-    right: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
 }
 
  /*responsive opp til desktop*/
