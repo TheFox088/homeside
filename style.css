@@ -85,8 +85,10 @@ nav ul li a{
 .content{ 
     margin-top: 10%;
     max-width: 600px;
-    display: inline;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 p{
@@ -111,7 +113,7 @@ p{
 
 
 
-.content a{
+.anchor{
     background: #4864ff;
     color: white;
     padding: 15px 70px;
